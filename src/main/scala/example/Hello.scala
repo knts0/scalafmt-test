@@ -59,6 +59,8 @@ case class Hoge(
   * Seq [String]
   * List[String]
   * のように[を縦に揃えたい
+  *
+  * おそらく余計な空白を全く許容しない設定になっている
   */
 object Hoge {
   type A = Seq[String]
@@ -77,4 +79,12 @@ abstract class Fuga {}
 
 /**
   * TODO: extendsのインデント設定
+  */
+
+/**
+  * TODO: trailing commaを許可
+  */
+
+/**
+  * TODO: slickのフォーマットが変な感じになる問題
   */

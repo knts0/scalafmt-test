@@ -9,6 +9,11 @@ trait Greeting {
 
   val x = 3
 
+  for {
+    a    <- Seq(1)
+    fuga <- Seq("bbb")
+  } yield a
+
   /** case文を揃える */
   x match {
     case 3  => "ok 3"
@@ -67,6 +72,18 @@ object Hoge {
 }
 
 abstract class Fuga {}
+
+case class Foo(
+  firstParam:  Int,
+  secondParam: String,
+  thirdParam:  Boolean
+) {
+  def Foo(
+    firstParam:  Int,
+    secondParam: String,
+    thirdParam:  Boolean
+  ) = ???
+}
 
 /**
   * TODO: 空行が勝手に挿入されることがある

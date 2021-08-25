@@ -9,17 +9,17 @@ trait Greeting {
 
   val x = 3
 
-  for {
-    a    <- Seq(1)
-    fuga <- Seq("bbb")
-  } yield a
-
   /** case文を揃える */
   x match {
     case 3  => "ok 3"
     case 44 => "ok 44"
     case _  => "ng"
   }
+
+  for {
+    a    <- Seq(1)
+    fuga <- Seq("bbb")
+  } yield a
 
   Map(
     1  -> "a",

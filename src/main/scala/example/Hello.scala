@@ -26,7 +26,6 @@ trait Greeting {
     22 -> "b",
   )
 
-  /** 1行あたりの文字数が多いと改行される */
   new Hoge("aaa", 15)
 
   /**
@@ -90,9 +89,5 @@ case class Foo(
   */
 
 /**
-  * TODO: extendsのインデント設定
-  */
-
-/**
-  * TODO: slickのフォーマットが変な感じになる問題
+  * TODO: slickのフォーマットが変な感じになる問題(おそらく空行)
   */

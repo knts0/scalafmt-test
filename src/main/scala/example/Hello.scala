@@ -31,7 +31,6 @@ trait Greeting {
     *   hoge3, hoge4, hoge5
     * )
     * のように中途半端なところで改行されていると、1行1つに直される
-    *
     */
   def testMethod(
     hoge1: String,
@@ -70,19 +69,11 @@ object Hoge {
 abstract class Fuga {}
 
 /**
-  * TODO: scaladocのフォーマットがおかしい
-  */
-
-/**
   * TODO: 空行が勝手に挿入されることがある
   */
 
 /**
   * TODO: extendsのインデント設定
-  */
-
-/**
-  * TODO: trailing commaを許可
   */
 
 /**

@@ -8,6 +8,7 @@ trait Greeting {
   lazy val greeting: String = "hello"
 
   val x = 3
+  val aaa = 14
 
   /** case文を揃える */
   x match {
@@ -19,6 +20,9 @@ trait Greeting {
   for {
     a    <- Seq(1)
     fuga <- Seq("bbb")
+    b     = 2
+
+    bbb <- Seq(222)
   } yield a
 
   Map(
@@ -66,17 +70,13 @@ case class Hoge(
   * おそらく余計な空白を全く許容しない設定になっている
   */
 object Hoge {
-  type A = Seq[String]
-  type B = List[String]
+  type A  = Seq[String]
+  type BB = List[String]
 }
 
 abstract class Fuga {}
 
-case class Foo(
-  firstParam:  Int,
-  secondParam: String,
-  thirdParam:  Boolean
-) {
+case class Foo(firstParam: Int, secondParam: String, thirdParam: Boolean) {
   def Foo(
     firstParam:  Int,
     secondParam: String,

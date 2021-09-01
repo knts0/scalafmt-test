@@ -7,7 +7,7 @@ object Hello extends Greeting with App {
 trait Greeting {
   lazy val greeting: String = "hello"
 
-  val x = 3
+  val x   = 3
   val aaa = 14
 
   /** case文を揃える */
@@ -30,7 +30,10 @@ trait Greeting {
     22 -> "b",
   )
 
-  new Hoge("aaa", 15)
+  new Hoge(
+    name = "aaa",
+    age  = 15,
+  )
 
   /**
     * TODO: メソッド定義が改行される

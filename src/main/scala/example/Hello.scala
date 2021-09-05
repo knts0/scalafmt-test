@@ -30,9 +30,14 @@ trait Greeting {
     22 -> "b",
   )
 
-  new Hoge(
+  val hoge1 = new Hoge(
     name = "aaa",
     age  = 15,
+  )
+
+  val hoge2 = Hoge(
+    name = "bbbbb",
+    age  = 50,
   )
 
   /**

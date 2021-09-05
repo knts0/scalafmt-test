@@ -10,6 +10,9 @@ trait Greeting {
   val x   = 3
   val aaa = 14
 
+  val xx:     String = "Hello"
+  val zzzzzz: Int    = 45
+
   /** case文を揃える */
   x match {
     case 3  => "ok 3"
